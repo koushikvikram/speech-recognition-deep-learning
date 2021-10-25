@@ -6,5 +6,9 @@
 
 *If you prefer reading from Jupyter Notebooks, please click on [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).*
 
-------------------
+| ![](images/ivr.webp) |
+|:--:|
+| *Credit: https://getvoip.com/blog/2021/03/08/what-is-ivr/*  |
+| |
 
+Remember the last time you called your Bank?
