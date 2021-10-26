@@ -9,6 +9,7 @@
 ## Contents
 
 - [Introduction](https://github.com/koushikvikram/speech-recognition-deep-learning#introduction)
+- [Dataset and Project Outline](https://github.com/koushikvikram/speech-recognition-deep-learning#dataset-and-project-outline)
 - [The Process Illustrated](https://github.com/koushikvikram/speech-recognition-deep-learning#the-process-illustrated)
 - [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
@@ -34,6 +35,10 @@ Enter ASR. IVR uses a technology called Automatic Speech Recognition or ASR, als
 > *"ASR is widely used in contact centres across the globe to enhance customer satisfaction, cutting costs, improving productivity and so on. It is now extremely easy for callers to input different types of information including reason of calling, account numbers, names via the capabilities of a voice recognition technology. All these can be done without any interaction with a live call centre agent. It impacts tremendously on the productivity of contact centre as callers need not have to remain idle while their calls are put on hold since agents are busy with some other calls. This is how a contact centre can do great cost cutting by making effective use of speech recognition technology."* - Speech Recognition And Customer Experience, Sumita Banerjee [[1](https://www.c-zentrix.com/blog/speech-recognition-and-customer-experience)]
 
 Some speech recognition systems require "training" (also called "enrollment") where an individual speaker reads text or isolated vocabulary into the system. The system analyzes the person's specific voice and uses it to fine-tune the recognition of that person's speech, resulting in increased accuracy. Systems that do not use training are called "speaker-independent" systems. Systems that use training are called "speaker dependent". [[2](https://en.wikipedia.org/wiki/Speech_recognition)]
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+## Dataset and Project Outline
 
 In this project, we'll build a "speaker-independent" system and train it on Google Brain's [Speech Commands Data Set v0.01](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data). [[3](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data)]. Then, we'll test our model on a phone number spoken in our voice. We'll do all of these in a [Kaggle notebook](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb) to take advantage of easy data access and the computing power of GPUs.
 
