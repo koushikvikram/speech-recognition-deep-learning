@@ -12,6 +12,7 @@
 - [The Process Illustrated](https://github.com/koushikvikram/speech-recognition-deep-learning#the-process-illustrated)
 - [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
+- [Moving Forward](https://github.com/koushikvikram/speech-recognition-deep-learning#moving-forward)
 - [References](https://github.com/koushikvikram/speech-recognition-deep-learning#references)
 
 
@@ -251,6 +252,32 @@ To recall, we use MFCCs to train our model on human-like audio features. They de
 We've covered just enough Signal Processing to implement a basic Audio Classification pipeline. However, remember that Signal Processing is a huge subfield that covers a lot more concepts and mastering it requires rigourous and extensive study.  
 
 [Signals and Systems by Alan V. Oppenheim, S. Hamid Nawab, Alan S. Willsky](https://www.goodreads.com/book/show/166327.Signals_and_Systems) and [Discrete-Time Signal Processing by Alan V. Oppenheim, Ronald W. Schafer, John R. Buck](https://www.goodreads.com/book/show/166325.Discrete_Time_Signal_Processing) would be a good place to start. All the best!
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+## Moving Forward
+
+Now that you have a basic understanding of the Deep Learning workflow for Audio Classification and relevant Signal Processing concepts, you have quite a few options to consider. Deep Learning and Signal Processing are general concepts. While concepts like MFCCs are specific to human speech, the rest can be applied to any kind of digital signal data.
+
+Instead of building more models, you can build an Alexa skill or your own IVR for a change. And, you can do it without writing a single line of code! Here's an example of an Alexa skill called "FAANG Stock Tracker" that I've created using [Voiceflow](https://www.voiceflow.com/).
+
+| ![](images/faang-stock-tracker-voiceflow-export.png) |
+|:--:|
+| Click image to enlarge |
+
+Voiceflow is a WYSIWYG (What You See Is What You Get) tool. It allows you to create interactive voice apps by drag-and-drop. It provides components for User Input, Response, Logic, Integration with External Tools and Channels. You can also test your voice app and deploy it on multiple systems.
+
+The following articles provide a more comprehensive overview of Voiceflow:
+- [Exploring Voice User Interface Design — A Voiceflow Guide and Tutorial](https://medium.com/voice-experience-design/exploring-voice-user-interface-design-a-voiceflow-guide-and-tutorial-c51dd087d036)
+- [Using Alexa and Voiceflow to prototype a telephone system](https://uxdesign.cc/using-alexa-and-voiceflow-to-prototype-a-telephone-system-539ab8b203fe)
+
+Try them out and have fun!
+
+----------------------------------------------------------------------------------------------------------------------------------
+
+We hope that this repo has given you enough confidence to begin your journey into the world of Audio Deep Learning. If you'd like to see additions, corrections or better explanations in this repo, please send an email with your feedback to koushikvikram91@gmail.com . I'd be more than happy to make improvements! 😊 
+
+Thank you for your time! Make sure to check out my other repositories!
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
