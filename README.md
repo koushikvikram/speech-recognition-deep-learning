@@ -13,6 +13,7 @@
 - [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
 - [Moving Forward](https://github.com/koushikvikram/speech-recognition-deep-learning#moving-forward)
+- [Conclusion](https://github.com/koushikvikram/speech-recognition-deep-learning#conclusion)
 - [References](https://github.com/koushikvikram/speech-recognition-deep-learning#references)
 
 
@@ -275,7 +276,9 @@ Try them out and have fun!
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-We hope that this repo has given you enough confidence to begin your journey into the world of Audio Deep Learning. If you'd like to see additions, corrections or better explanations in this repo, please send an email with your feedback to koushikvikram91@gmail.com . I'd be more than happy to make improvements! 😊 
+## Conclusion
+
+We hope this repo has given you enough confidence to begin your journey into the world of Audio Deep Learning. If you'd like to see additions, corrections or better explanations in this repo, please send an email with your feedback to koushikvikram91@gmail.com . I'd be more than happy to make improvements! 😊 
 
 Thank you for your time! Make sure to check out my other repositories!
 
