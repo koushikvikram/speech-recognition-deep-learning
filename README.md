@@ -11,8 +11,8 @@
 ## Contents
 
 - [Introduction]()
+- [The Process Illustrated]()
 - [References]()
-- [Importing Necessary Packages]()
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Some speech recognition systems require "training" (also called "enrollment") wh
 
 In this project, we'll build a "speaker-independent" system and train it on Google Brain's [Speech Commands Data Set v0.01](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data). [[3](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data)]. Then, we'll test our model on a phone number spoken in our voice. We'll do all of these in a [Kaggle notebook](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb) to take advantage of easy data access and the computing power of GPUs.
 
-## Speech Recognition Process
+## The Process Illustrated
 
 The entire process is described in the infographic below.
 
@@ -40,10 +40,6 @@ The entire process is described in the infographic below.
 |:--------------------------------------------------------------:|:--------------------------------------------------------------:|
 |![Speech Recognition Deep Learning Process](images/process.png) |![Speech Recognition Deep Learning Process](images/audio-dl-viz.png)|
 
-
-```python
-
-```
 
 ## References
 1. [Speech Recognition And Customer Experience - C-Zentrix](https://www.c-zentrix.com/blog/speech-recognition-and-customer-experience)
