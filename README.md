@@ -1,6 +1,6 @@
-# Developing a Speech Recognition Model Using Convolutional Neural Networks
+# Developing a Speech Recognition Model Using Convolutional Neural Networks (15 minute read)
 
-> This repository builds on the liveProject [Recognize Speech Commands with Deep Learning](https://www.manning.com/liveproject/recognize-speech-commands-with-deep-learning) by [Manning Publications](https://liveproject.manning.com/), for which I served as the Implementer.
+> This repository expands on the liveProject [Recognize Speech Commands with Deep Learning](https://www.manning.com/liveproject/recognize-speech-commands-with-deep-learning) by [Manning Publications](https://liveproject.manning.com/), for which I served as the Implementer.
 
 *If you prefer reading from Jupyter Notebooks, please click on [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).*
 
@@ -10,8 +10,10 @@
 
 - [Introduction](https://github.com/koushikvikram/speech-recognition-deep-learning#introduction)
 - [The Process Illustrated](https://github.com/koushikvikram/speech-recognition-deep-learning#the-process-illustrated)
+- [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
 - [References](https://github.com/koushikvikram/speech-recognition-deep-learning#references)
+
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -41,6 +43,10 @@ The entire process is described in the infographics below.
 
 |![Speech Recognition Deep Learning Process](images/process.png) |![Speech Recognition Deep Learning Process](images/audio-dl-viz.png)|
 |:--------------------------------------------------------------:|:--------------------------------------------------------------:|
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+## Code
 
 Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
 
