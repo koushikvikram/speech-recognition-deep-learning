@@ -240,7 +240,7 @@ To recall, we use MFCCs to train our model on human-like audio features. They de
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-We've covered just enough Signal Processing required to implement a basic Audio Classification pipeline. However, remember that Signal Processing is a huge subfield that covers a lot more concepts and mastering it requires rigourous and extensive study.  
+We've covered just enough Signal Processing to implement a basic Audio Classification pipeline. However, remember that Signal Processing is a huge subfield that covers a lot more concepts and mastering it requires rigourous and extensive study.  
 
 [Signals and Systems by Alan V. Oppenheim, S. Hamid Nawab, Alan S. Willsky](https://www.goodreads.com/book/show/166327.Signals_and_Systems) and [Discrete-Time Signal Processing by Alan V. Oppenheim, Ronald W. Schafer, John R. Buck](https://www.goodreads.com/book/show/166325.Discrete_Time_Signal_Processing) would be a good place to start. All the best!
 
