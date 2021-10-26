@@ -42,7 +42,7 @@ The entire process is described in the infographics below.
 |![Speech Recognition Deep Learning Process](images/process.png) |![Speech Recognition Deep Learning Process](images/audio-dl-viz.png)|
 |:--------------------------------------------------------------:|:--------------------------------------------------------------:|
 
-The code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
+Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
