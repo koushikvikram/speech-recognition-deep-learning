@@ -48,7 +48,11 @@ The entire process is described in the infographics below.
 
 ## Code
 
-Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
+Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb). 
+
+Most readers are familiar with the Deep Learning workflow. So, it is not explained in this repo. For readers that don't have a background in Electrical or Computer Engineering, we offer a high-level overview of the Signal Processing concepts used in this repo in the following section.
+
+Please feel free to skip the next section if you're already familiar with Signal Processing.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
