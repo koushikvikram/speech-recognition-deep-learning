@@ -232,9 +232,9 @@ If you think about feeding the MFCCs as features to a machine learning algorithm
 
 > Traditionally, we take the first 12-13 coefficients. The first coefficients keep the most information (eg. formants, spectral envelope)
 
-> Use $\Delta$ MFCCs and $\Delta$ $\Delta$ MFCCs. (first and second order derivatives)
+> Use &#x394; MFCCs and &#x394; &#x394; MFCCs. (first and second order derivatives)
 
-> We'll get 39 coefficients per frame. (13 MFCCs + 13 $\Delta$ MFCCs + 13 $\Delta$ $\Delta$ MFCCs)
+> We'll get 39 coefficients per frame. (13 MFCCs + 13 &#x394; MFCCs + 13 &#x394; &#x394; MFCCs)
 
 To recall, we use MFCCs to train our model on human-like audio features. They describe the "large" structures of the spectrum and ignore the fine spectral structures.
 
