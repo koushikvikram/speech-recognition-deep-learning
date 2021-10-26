@@ -73,7 +73,7 @@ The envelope of an oscillating signal is a smooth curve outlining its extremes.
 
 ### Fast Fourier Transform
 
-> The Fourier Transform and its related concepts are beautifully explained on [fouriertransform.com](https://www.thefouriertransform.com/). If you'd like to develop a detailed understanding of the concepts, please head over to the website. Here, we'll give a brief overview of each concept to get a basic understanding.
+> The Fourier Transform and its related concepts are beautifully explained on [thefouriertransform.com](https://www.thefouriertransform.com/). If you'd like to develop a detailed understanding of the concepts, please head over to the website. Here, we'll give a brief overview of each concept to get a basic understanding.
 
 The Fourier Transform is used to decompose complex periodic sound into a sum of sine waves oscillating at different frequencies.
 
