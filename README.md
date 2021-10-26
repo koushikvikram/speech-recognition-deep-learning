@@ -36,9 +36,8 @@ In this project, we'll build a "speaker-independent" system and train it on Goog
 
 The entire process is described in the infographic below.
 
-|                                                                |                                                                |
-|:--------------------------------------------------------------:|:--------------------------------------------------------------:|
 |![Speech Recognition Deep Learning Process](images/process.png) |![Speech Recognition Deep Learning Process](images/audio-dl-viz.png)|
+|:--------------------------------------------------------------:|:--------------------------------------------------------------:|
 
 
 ## References
