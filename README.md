@@ -10,7 +10,7 @@
 
 - [Introduction](https://github.com/koushikvikram/speech-recognition-deep-learning#introduction)
 - [Dataset and Project Outline](https://github.com/koushikvikram/speech-recognition-deep-learning#dataset-and-project-outline)
-- [The Process Illustrated](https://github.com/koushikvikram/speech-recognition-deep-learning#the-process-illustrated)
+- [Process Illustration](https://github.com/koushikvikram/speech-recognition-deep-learning#process-illustration)
 - [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
 - [Moving Forward](https://github.com/koushikvikram/speech-recognition-deep-learning#moving-forward)
@@ -44,7 +44,7 @@ In this project, we'll build a "speaker-independent" system and train it on Goog
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-## The Process Illustrated
+## Process Illustration
 
 The entire process is described in the infographics below.
 
