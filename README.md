@@ -1,18 +1,17 @@
 # Developing a Speech Recognition Model Using Convolutional Neural Networks (15 minute read)
 
-> This repository expands on the liveProject [Recognize Speech Commands with Deep Learning](https://www.manning.com/liveproject/recognize-speech-commands-with-deep-learning) by [Manning Publications](https://liveproject.manning.com/), for which I served as the Implementer.
+This repository expands on the liveProject [Recognize Speech Commands with Deep Learning](https://www.manning.com/liveproject/recognize-speech-commands-with-deep-learning) by [Manning Publications](https://liveproject.manning.com/), for which I served as the Implementer.
 
-*If you prefer reading from Jupyter Notebooks, please click on [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).*
+If you prefer diving into the code straight away, please click on [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
 
----------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------
 
 ## Contents
 
 - [Introduction](https://github.com/koushikvikram/speech-recognition-deep-learning#introduction)
 - [Dataset and Project Outline](https://github.com/koushikvikram/speech-recognition-deep-learning#dataset-and-project-outline)
-- [Process Illustration](https://github.com/koushikvikram/speech-recognition-deep-learning#process-illustration)
-- [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
+- [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
 - [Moving Forward](https://github.com/koushikvikram/speech-recognition-deep-learning#moving-forward)
 - [Conclusion](https://github.com/koushikvikram/speech-recognition-deep-learning#conclusion)
 - [References](https://github.com/koushikvikram/speech-recognition-deep-learning#references)
@@ -44,28 +43,9 @@ In this project, we'll build a "speaker-independent" system and train it on Goog
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
-## Process Illustration
-
-The entire process is described in the infographics below.
-
-|![Speech Recognition Deep Learning Process](images/process.png) |![Speech Recognition Deep Learning Process](images/audio-dl-viz.png)|
-|:--------------------------------------------------------------:|:--------------------------------------------------------------:|
-
----------------------------------------------------------------------------------------------------------------------------------
-
-## Code
-
-Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb). 
-
-Most readers are familiar with the Deep Learning workflow. So, it is not explained in this repo. For readers that don't have a background in Electrical or Computer Engineering, we offer a high-level overview of the Signal Processing concepts used in this repo in the following section.
-
-Please feel free to skip the next section if you're already familiar with Signal Processing.
-
----------------------------------------------------------------------------------------------------------------------------------
-
 ## Signal Processing Concepts
 
-We've used quite a few signal processing techniques in our repository. Let's take a look at some.
+We've used quite a few signal processing techniques in our repository. Let's take a look at them before we start.
 
 ### Sample Rate
 
@@ -261,11 +241,24 @@ We've covered just enough Signal Processing to implement a basic Audio Classific
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
+## Code
+
+Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb). 
+
+The images below illustrate the process and outputs at each stage in the process.
+
+|![Speech Recognition Deep Learning Process](images/process.png) |![Speech Recognition Deep Learning Process](images/audio-dl-viz.png)|
+|:--------------------------------------------------------------:|:--------------------------------------------------------------:|
+
+Code is accompanied by comments and docstrings where necessary.
+
+----------------------------------------------------------------------------------------------------------------------------------
+
 ## Moving Forward
 
 Now that you have a basic understanding of the Deep Learning workflow for Audio Classification and relevant Signal Processing concepts, you have quite a few options to consider. Deep Learning and Signal Processing are general concepts. While concepts like MFCCs are specific to human speech, the rest can be applied to any kind of digital signal data.
 
-Instead of building more models, you can build an Alexa skill or your own IVR for a change. And, you can do it without writing a single line of code! Here's an example of an Alexa skill called "FAANG Stock Tracker" that I've created using [Voiceflow](https://www.voiceflow.com/).
+Instead of building more models, you may choose to build an Alexa skill or your own IVR for a change. And, you can do it without writing a single line of code! Here's an example of an Alexa skill called "FAANG Stock Tracker" that I've created using [Voiceflow](https://www.voiceflow.com/).
 
 | ![](images/faang-stock-tracker-voiceflow-export.png) |
 |:--:|
