@@ -43,7 +43,7 @@ In this project, we'll build a "speaker-independent" system and train it on Goog
 
 We've used quite a few signal processing techniques in our repository. Let's take a look at them before we start.
 
-Click on each topic to expand.
+**Click on each topic to expand.**
 
 <details>
 <summary> Sample Rate </summary>
