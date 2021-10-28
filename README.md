@@ -1,9 +1,7 @@
 <h1 style="text-align: center;"> Developing a Speech Recognition Model Using Convolutional Neural Networks (10 minute read) </h1>
 
-| ![](images/ivr.webp) |
-|:--:|
-| *Credit: https://getvoip.com/blog/2021/03/08/what-is-ivr/*  |
-| |
+![](images/ivr.webp)
+<p style="text-align: center;">Credit: <a href="https://getvoip.com/blog/2021/03/08/what-is-ivr/"> What is IVR And How Does it Work? (Plus Top IVR Providers) </a> </p>
 
 This repository expands on the liveProject [Recognize Speech Commands with Deep Learning](https://www.manning.com/liveproject/recognize-speech-commands-with-deep-learning) by [Manning Publications](https://liveproject.manning.com/), for which I served as the Implementer.
 
