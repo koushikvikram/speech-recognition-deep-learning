@@ -1,4 +1,4 @@
-# Developing a Speech Recognition Model Using Convolutional Neural Networks (15 minute read)
+<h1 style="text-align: center;"> Developing a Speech Recognition Model Using Convolutional Neural Networks (10 minute read) </h1>
 
 | ![](images/ivr.webp) |
 |:--:|
