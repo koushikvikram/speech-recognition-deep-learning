@@ -1,39 +1,35 @@
 # Developing a Speech Recognition Model Using Convolutional Neural Networks (15 minute read)
 
+| ![](images/ivr.webp) |
+|:--:|
+| *Credit: https://getvoip.com/blog/2021/03/08/what-is-ivr/*  |
+| |
+
 This repository expands on the liveProject [Recognize Speech Commands with Deep Learning](https://www.manning.com/liveproject/recognize-speech-commands-with-deep-learning) by [Manning Publications](https://liveproject.manning.com/), for which I served as the Implementer.
 
 If you prefer diving into the code straight away, please click on [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-## Contents
-
-- [Introduction](https://github.com/koushikvikram/speech-recognition-deep-learning#introduction)
-- [Dataset and Project Outline](https://github.com/koushikvikram/speech-recognition-deep-learning#dataset-and-project-outline)
-- [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
-- [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
-- [Moving Forward](https://github.com/koushikvikram/speech-recognition-deep-learning#moving-forward)
-- [Conclusion](https://github.com/koushikvikram/speech-recognition-deep-learning#conclusion)
-- [References](https://github.com/koushikvikram/speech-recognition-deep-learning#references)
-
-
----------------------------------------------------------------------------------------------------------------------------------
-
 ## Introduction
 
 When you dial your Bank's customer service, instead of a human picking up your call, a computer answers and asks you to speak out your account number. You tell your account number. Then, the computer gives you a few options, asks you for more details and transfers your call to a human according to your response. This process is called Interactive Voice Response (IVR). But, have you ever wondered how the computer is actually able to understand what you said?
-
-| ![](images/ivr.webp) |
-|:--:|
-| *Credit: https://getvoip.com/blog/2021/03/08/what-is-ivr/*  |
-| |
-
 
 Enter ASR. IVR uses a technology called Automatic Speech Recognition or ASR, also known as Speech-to-Text (STT) to understand your speech. ASR takes in the audio, converts it to text and passes it on for the computer to make a decision. 
 
 > *"ASR is widely used in contact centres across the globe to enhance customer satisfaction, cutting costs, improving productivity and so on. It is now extremely easy for callers to input different types of information including reason of calling, account numbers, names via the capabilities of a voice recognition technology. All these can be done without any interaction with a live call centre agent. It impacts tremendously on the productivity of contact centre as callers need not have to remain idle while their calls are put on hold since agents are busy with some other calls. This is how a contact centre can do great cost cutting by making effective use of speech recognition technology."* - Speech Recognition And Customer Experience, Sumita Banerjee [[1](https://www.c-zentrix.com/blog/speech-recognition-and-customer-experience)]
 
 Some speech recognition systems require "training" (also called "enrollment") where an individual speaker reads text or isolated vocabulary into the system. The system analyzes the person's specific voice and uses it to fine-tune the recognition of that person's speech, resulting in increased accuracy. Systems that do not use training are called "speaker-independent" systems. Systems that use training are called "speaker dependent". [[2](https://en.wikipedia.org/wiki/Speech_recognition)]
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+## Contents
+- [Dataset and Project Outline](https://github.com/koushikvikram/speech-recognition-deep-learning#dataset-and-project-outline)
+- [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
+- [Code](https://github.com/koushikvikram/speech-recognition-deep-learning#code)
+- [Moving Forward](https://github.com/koushikvikram/speech-recognition-deep-learning#moving-forward)
+- [Conclusion](https://github.com/koushikvikram/speech-recognition-deep-learning#conclusion)
+- [Acknowledgment](https://github.com/koushikvikram/speech-recognition-deep-learning#acknowledgment)
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
@@ -47,7 +43,10 @@ In this project, we'll build a "speaker-independent" system and train it on Goog
 
 We've used quite a few signal processing techniques in our repository. Let's take a look at them before we start.
 
-### Sample Rate
+Click on each topic to expand.
+
+<details>
+<summary> Sample Rate </summary>
 
 Sound, by nature is "Analog". We hear analog sounds as smooth, continuous wave of air pressure pulses (vibrations). However, Computers are highly effective at processing digital data. So, we can convert certain characteristics of an analog sound wave, like the frequency and amplitude to digital data that computer software can read. This allows us to manage, edit, and arrange audio in a software-based context.
 
@@ -62,13 +61,19 @@ The system takes these measurements at a speed called the **sample rate**, measu
 
 > As for our project, we need to make sure that all input files have the same sample rate and duration so that they all have the same shape. This is necessary because our Convolution Neural Network requires all inputs to be of the same shape.
 
-### Envelope
+</details>
+
+<details>
+<summary> Envelope </summary>
 
 The envelope of an oscillating signal is a smooth curve outlining its extremes.
 
 ![](images/signal-envelope.png)
+</details>
 
-### Fast Fourier Transform
+
+<details>
+<summary>Fast Fourier Transform</summary>
 
 > The Fourier Transform and its related concepts are beautifully explained on [thefouriertransform.com](https://www.thefouriertransform.com/). If you'd like to develop a detailed understanding of the concepts, please head over to the website. Here, we'll give a brief overview of each concept to get a basic understanding.
 
@@ -99,9 +104,10 @@ To overcome this problem, we can use the Fast Fourier Transform (FFT), which has
 | ![](images/fft-explanation.png) |
 |:--:|
 | *Credit: https://bookdown.org/rdpeng/timeseriesbook/the-fast-fourier-transform-fft.html* |
+</details>
 
-
-### Power Spectrum
+<details>
+<summary>Power Spectrum</summary>
 
 The result of a Fourier transform is a power spectrum. It represents magnitude as a function of frequency. It's a snapshot of all the elements that concur to form the sound/signal in the given period of time.
 
@@ -109,7 +115,10 @@ The result of a Fourier transform is a power spectrum. It represents magnitude a
 |:--:|
 | *Credit: https://www.youtube.com/watch?v=m3XbqfIij_Y* |
 
-### Spectrogram and STFT
+</details>
+
+<details>
+<summary> Spectrogram and STFT </summary>
 
 Now, we have a power spectrum and also an algorithm to compute it quickly. Great! Or is it? Not quite.
 
@@ -135,7 +144,11 @@ The magnitude squared of the STFT yields the spectrogram representation of the P
 
 > Although we use MFCCs in our project, it's also fine to use Spectrograms as inputs to our neural networks. To understand why we prefer MFCCs over Spectrograms, read the answers to the question, [What are the advantages of using spectrogram vs MFCC as feature extraction for speech recognition using deep neural network?](https://www.quora.com/What-are-the-advantages-of-using-spectrogram-vs-MFCC-as-feature-extraction-for-speech-recognition-using-deep-neural-network) on Quora.
 
-### Mel-Frequency Cepstral Coefficient (MFCC)
+</details>
+
+<details>
+
+<summary> Mel-Frequency Cepstral Coefficient (MFCC) </summary>
 
 Up to this point, all the concepts we've covered in Signal Processing were focused on making it easier for the computer to process the data. But, let's not forget that we're training and evaluating our model on **Human speech** and not on computer-generated audio.
 
@@ -233,11 +246,14 @@ If you think about feeding the MFCCs as features to a machine learning algorithm
 
 To recall, we use MFCCs to train our model on human-like audio features. They describe the "large" structures of the spectrum and ignore the fine spectral structures.
 
+</details>
+
 ---------------------------------------------------------------------------------------------------------------------------------
 
 We've covered just enough Signal Processing to implement a basic Audio Classification pipeline. However, remember that Signal Processing is a huge subfield that covers a lot more concepts and mastering it requires rigourous and extensive study.  
 
 [Signals and Systems by Alan V. Oppenheim, S. Hamid Nawab, Alan S. Willsky](https://www.goodreads.com/book/show/166327.Signals_and_Systems) and [Discrete-Time Signal Processing by Alan V. Oppenheim, Ronald W. Schafer, John R. Buck](https://www.goodreads.com/book/show/166325.Discrete_Time_Signal_Processing) would be a good place to start. All the best!
+
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
@@ -282,7 +298,7 @@ Thank you for your time! Make sure to check out my other repositories!
 
 ----------------------------------------------------------------------------------------------------------------------------------
 
-## References
+## Acknowledgment
 1. [Speech Recognition And Customer Experience - C-Zentrix](https://www.c-zentrix.com/blog/speech-recognition-and-customer-experience)
 2. [Speech Recognition - Wikipedia](https://en.wikipedia.org/wiki/Speech_recognition)
 3. [Speech Commands Data Set v0.01](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data)
