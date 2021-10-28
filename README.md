@@ -9,8 +9,6 @@ This repository expands on the liveProject [Recognize Speech Commands with Deep 
 
 If you prefer diving into the code straight away, please click on [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb).
 
-----------------------------------------------------------------------------------------------------------------------------------
-
 ## Introduction
 
 When you dial your Bank's customer service, instead of a human picking up your call, a computer answers and asks you to speak out your account number. You tell your account number. Then, the computer gives you a few options, asks you for more details and transfers your call to a human according to your response. This process is called Interactive Voice Response (IVR). But, have you ever wondered how the computer is actually able to understand what you said?
@@ -21,8 +19,6 @@ Enter ASR. IVR uses a technology called Automatic Speech Recognition or ASR, als
 
 Some speech recognition systems require "training" (also called "enrollment") where an individual speaker reads text or isolated vocabulary into the system. The system analyzes the person's specific voice and uses it to fine-tune the recognition of that person's speech, resulting in increased accuracy. Systems that do not use training are called "speaker-independent" systems. Systems that use training are called "speaker dependent". [[2](https://en.wikipedia.org/wiki/Speech_recognition)]
 
----------------------------------------------------------------------------------------------------------------------------------
-
 ## Contents
 - [Dataset and Project Outline](https://github.com/koushikvikram/speech-recognition-deep-learning#dataset-and-project-outline)
 - [Signal Processing Concepts](https://github.com/koushikvikram/speech-recognition-deep-learning#signal-processing-concepts)
@@ -31,13 +27,9 @@ Some speech recognition systems require "training" (also called "enrollment") wh
 - [Conclusion](https://github.com/koushikvikram/speech-recognition-deep-learning#conclusion)
 - [Acknowledgment](https://github.com/koushikvikram/speech-recognition-deep-learning#acknowledgment)
 
----------------------------------------------------------------------------------------------------------------------------------
-
 ## Dataset and Project Outline
 
 In this project, we'll build a "speaker-independent" system and train it on Google Brain's [Speech Commands Data Set v0.01](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data). [[3](https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data)]. Then, we'll test our model on a phone number spoken in our voice. We'll do all of these in a [Kaggle notebook](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb) to take advantage of easy data access and the computing power of GPUs.
-
----------------------------------------------------------------------------------------------------------------------------------
 
 ## Signal Processing Concepts
 
@@ -253,8 +245,6 @@ We've covered just enough Signal Processing to implement a basic Audio Classific
 [Signals and Systems by Alan V. Oppenheim, S. Hamid Nawab, Alan S. Willsky](https://www.goodreads.com/book/show/166327.Signals_and_Systems) and [Discrete-Time Signal Processing by Alan V. Oppenheim, Ronald W. Schafer, John R. Buck](https://www.goodreads.com/book/show/166325.Discrete_Time_Signal_Processing) would be a good place to start. All the best!
 
 
-----------------------------------------------------------------------------------------------------------------------------------
-
 ## Code
 
 Code for the entire process can be found in [dl-for-speech-recognition.ipynb](https://github.com/koushikvikram/speech-recognition-deep-learning/blob/main/dl-for-speech-recognition.ipynb). 
@@ -266,7 +256,6 @@ The images below illustrate the process and outputs at each stage in the process
 
 Code is accompanied by comments and docstrings where necessary.
 
-----------------------------------------------------------------------------------------------------------------------------------
 
 ## Moving Forward
 
@@ -286,15 +275,11 @@ The following articles provide a more comprehensive overview of Voiceflow:
 
 Try them out and have fun!
 
-----------------------------------------------------------------------------------------------------------------------------------
-
 ## Conclusion
 
 We hope this repo has given you enough confidence to begin your journey into the world of Audio Deep Learning. If you'd like to see additions, corrections or better explanations in this repo, please send an email with your feedback to koushikvikram91@gmail.com . I'd be more than happy to make improvements! 😊 
 
 Thank you for your time! Make sure to check out my other repositories!
-
-----------------------------------------------------------------------------------------------------------------------------------
 
 ## Acknowledgment
 1. [Speech Recognition And Customer Experience - C-Zentrix](https://www.c-zentrix.com/blog/speech-recognition-and-customer-experience)
