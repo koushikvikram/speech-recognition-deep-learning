@@ -79,7 +79,7 @@ The Fourier Transform of a function g(t) is defined by:
 |:--:|
 | *Credit: https://www.thefouriertransform.com/transform/fourier.php* |
 
-It can be applied to both continuous and discrete waves. Since computers are handle discrete waves better, we'll focus on the Discrete Fourier Transform. 
+It can be applied to both continuous and discrete waves. Since computers handle discrete waves better, we'll focus on the Discrete Fourier Transform. 
 
 | ![](images/dft.png) |
 |:--:|
@@ -144,7 +144,7 @@ Up to this point, all the concepts we've covered in Signal Processing were focus
 
 We want the machines to understand our way of perceiving things and not the other way around! This can be achieved by transforming input data to reflect human perception. But how is human perception different from a computer's perception?
 
-Turns out that we humans perceive sound on a **logarithmic** scale! Most human beings can easily tell the difference between a 100 Hz and 200 Hz sound. However, by that same token, we should assume that we can tell the difference between 1000 and 1100 Hz, right? Wrong. It is actually much harder for humans to be able to differentiate between higher frequencies, and easier for lower frequencies. So, even though the distance between the two sets of sounds are the same, our perception of the distance is not. This is what makes the Mel Scale fundamental in Machine Learning applications to audio, as it mimics our own perception of sound. [[6](https://towardsdatascience.com/learning-from-audio-the-mel-scale-mel-spectrograms-and-mel-frequency-cepstral-coefficients-f5752b6324a8)]
+Turns out that we humans perceive sound on a **logarithmic** scale! Most human beings can easily tell the difference between a 100 Hz and 200 Hz sound. By that same token, we should assume that we can tell the difference between 1000 and 1100 Hz, right? Wrong. It is actually much harder for humans to be able to differentiate between higher frequencies, and easier for lower frequencies. So, even though the distance between the two sets of sounds are the same, **our perception of the distance is not**. This is what makes the Mel Scale fundamental in Machine Learning applications to audio, as it mimics our own perception of sound. [[6](https://towardsdatascience.com/learning-from-audio-the-mel-scale-mel-spectrograms-and-mel-frequency-cepstral-coefficients-f5752b6324a8)]
 
 The transformation from the Hertz scale to the Mel Scale is the following:
 
@@ -157,7 +157,7 @@ Note that **log** in this case refers to the **natural logarithm** (also denoted
 We can visualize sounds on Mel Scale as opposed to the frequency domain and this spectrogram would be called Mel Spectrogram.
 
 But, wait! What does "Cepstral" mean? Have we misspelled "Spectrum"?  
-No!  
+Lol. No!  
 *A Cepstrum is a Spectrum of a Spectrum.*  
 
 Read further.
@@ -238,7 +238,7 @@ To recall, we use MFCCs to train our model on human-like audio features. They de
 
 </details>
 
-We've covered just enough Signal Processing to implement a basic Audio Classification pipeline. However, remember that Signal Processing is a huge subfield that covers a lot more concepts and mastering it requires rigourous and extensive study.  
+We've covered just enough Signal Processing to implement a basic Audio Classification pipeline. However, remember that Signal Processing is a huge subfield that covers many more concepts and mastering it requires rigourous and extensive study.  
 
 [Signals and Systems by Alan V. Oppenheim, S. Hamid Nawab, Alan S. Willsky](https://www.goodreads.com/book/show/166327.Signals_and_Systems) and [Discrete-Time Signal Processing by Alan V. Oppenheim, Ronald W. Schafer, John R. Buck](https://www.goodreads.com/book/show/166325.Discrete_Time_Signal_Processing) would be a good place to start. All the best!
 
@@ -259,13 +259,13 @@ Code is accompanied by comments and docstrings where necessary.
 
 Now that you have a basic understanding of the Deep Learning workflow for Audio Classification and relevant Signal Processing concepts, you have quite a few options to consider. Deep Learning and Signal Processing are general concepts. While concepts like MFCCs are specific to human speech, the rest can be applied to any kind of digital signal data.
 
-Instead of building more models, you may choose to build an Alexa skill or your own IVR for a change. And, you can do it without writing a single line of code! Here's an example of an Alexa skill called "FAANG Stock Tracker" that I've created using [Voiceflow](https://www.voiceflow.com/).
+You could building more models or you could build your own IVR or you could even choose to build an Alexa skill. And, you can do it without writing a single line of code! Here's an example of an Alexa skill named *"FAANG Stock Tracker"* that I've created using [Voiceflow](https://www.voiceflow.com/).
 
 | ![](images/faang-stock-tracker-voiceflow-export.png) |
 |:--:|
 | Click image to enlarge |
 
-Voiceflow is a WYSIWYG (What You See Is What You Get) tool. It allows you to create interactive voice apps by drag-and-drop. It provides components for User Input, Response, Logic, Integration with External Tools and Channels. You can also test your voice app and deploy it on multiple systems.
+Voiceflow is a WYSIWYG (What You See Is What You Get) tool. It allows you to create interactive voice apps by drag-and-drop. It provides components for User Input, Response, Logic and Integration with External Tools and Channels. You can also test your voice app and deploy it on multiple systems.
 
 The following articles provide a more comprehensive overview of Voiceflow:
 - [Exploring Voice User Interface Design — A Voiceflow Guide and Tutorial](https://medium.com/voice-experience-design/exploring-voice-user-interface-design-a-voiceflow-guide-and-tutorial-c51dd087d036)
@@ -275,7 +275,7 @@ Try them out and have fun!
 
 ## Conclusion
 
-We hope this repo has given you enough confidence to begin your journey into the world of Audio Deep Learning. If you'd like to see additions, corrections or better explanations in this repo, please send an email with your feedback to koushikvikram91@gmail.com . I'd be more than happy to make improvements! 😊 
+I hope this repo has given you enough confidence to begin your journey in the world of Audio Deep Learning. If you'd like to see additions, corrections or better explanations in this repo, please send an email with your feedback to koushikvikram91@gmail.com . I'd be more than happy to make improvements! 😊 
 
 Thank you for your time! Make sure to check out my other repositories!
 
