@@ -1,5 +1,8 @@
 <h1 style="text-align: center;"> Developing a Speech Recognition Model Using Convolutional Neural Networks (10 minute read) </h1>
 
+[![GitHub URL](https://img.shields.io/badge/author-Koushik%20Vikram-brightgreen)](https://github.com/koushikvikram)
+[![LinkedIn URL](https://img.shields.io/badge/-Koushik%20Vikram-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/koushikvikram/)
+
 ![](images/ivr.webp)
 <p style="text-align: center;">Credit: <a href="https://getvoip.com/blog/2021/03/08/what-is-ivr/"> What is IVR And How Does it Work? (Plus Top IVR Providers) </a> </p>
 
